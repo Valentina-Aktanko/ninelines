@@ -1,0 +1,13 @@
+extends pug/base
+
+prepend vars
+	- title="Резюме верстальщика"
+	- description="Выполнено в качестве тестового задания на позицию HTML-верстальщик в компании 9Lines"
+
+append vars
+	- link.icon16x16 = '/favicon.ico'
+	- body.classList = 'mainPage container';
+
+block content
+	//- .container
+	include pug/form
