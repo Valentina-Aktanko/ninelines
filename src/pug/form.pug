@@ -1,0 +1,28 @@
+
+section.form
+	.form__contacts.contacts
+		.contacts__avatar.avatar
+			img.contacts__photo.photo(src="images/photo.png" width="138" height="138" alt="Аватар")
+
+		.contacts__input-wrapper
+			+form_input("contacts__input", null, "text", "name", null, "Имя")
+			+form_input("contacts__input", null, "text", "birthday", null, "Дата рождения")
+			+form_input("contacts__input", null, "text", "city", null, "Город")
+			+form_input("contacts__input", null, "text", "contacts", null, "Контактные данные")
+
+	.form__skills.skills
+		+skills_list(['HTML5',
+			'CSS3',
+			'БЭМ',
+			'Sass',
+			'Less',
+			'Gulp',
+			'VanillaJS',
+			'Angular',
+			'jQuery',
+			'Git',
+			'Foundation',
+			'Bootstrap',
+		])
+
+	.form__skill-lvl

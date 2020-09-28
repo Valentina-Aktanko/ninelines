@@ -1,0 +1,8 @@
+mixin skills_item(skillName)
+	li.skills__item
+
+		+form_input("visually-hidden skills__checkbox", "skill-"+skillName, "checkbox", skillName, skillName, null)
+
+		label.skills__label(
+			for="skill-"+skillName
+		)= skillName
